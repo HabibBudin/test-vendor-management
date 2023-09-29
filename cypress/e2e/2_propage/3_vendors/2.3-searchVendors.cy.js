@@ -10,7 +10,7 @@ describe('template spec', () => {
       cy.get('.btn').click()
       cy.get('#remember').click()
       cy.get('#searchInput').click()
-      cy.get('#searchInput').type('account_manager')
+      cy.get('#searchInput').type('Mr. Landen Schumm IV')
       cy.get('#searchForm > .join > .btn > .w-6').click()
   })
 })
