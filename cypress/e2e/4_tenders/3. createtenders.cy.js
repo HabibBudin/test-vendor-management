@@ -28,7 +28,7 @@ describe('template spec', () => {
     
     cy.get('#tor_doc').attachFile('company_profile.pdf')
     cy.get('#support_doc').attachFile('sample.pdf')
-    
+    cy.wait(5000)
     cy.get('.btn').click()
 
               //negative case

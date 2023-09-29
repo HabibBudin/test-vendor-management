@@ -3,26 +3,26 @@ describe('template spec', () => {
      cy.visit('http://localhost:8000')
     cy.wait(2000)
 
-    cy.contains('Sign up').click()//hyperlink masuk ke laman signup
+    // cy.contains('Sign up').click()//hyperlink masuk ke laman signup
 
-    cy.get('#name').type('Habib') //signup tahap 1                  
-    cy.get('#email').type('habibudinn@gmail.com')
-    cy.get('#phone_number').type('0898124224')
-    cy.get('#password').type('qwertyuiop')
-    cy.get('#nextBtn1').click()
+    // cy.get('#name').type('Habib') //signup tahap 1                  
+    // cy.get('#email').type('habibudinn@gmail.com')
+    // cy.get('#phone_number').type('0898124224')
+    // cy.get('#password').type('qwertyuiop')
+    // cy.get('#nextBtn1').click()
 
-    //sign up tahap 2
-    cy.get('#company_name').type('Skive')
-    cy.get('#address').type('JL NYC emang ada no 145')
-    cy.get('#website').type('http://skive.com')
-    cy.get('#company_email').type('skive@gmail.com')
-    cy.get('#bank_reference').type('BRI')
-    cy.get('#nextBtn2').click()
+    // sign up tahap 2
+    // cy.get('#company_name').type('Skive')
+    // cy.get('#address').type('JL NYC emang ada no 145')
+    // cy.get('#website').type('http://skive.com')
+    // cy.get('#company_email').type('skive@gmail.com')
+    // cy.get('#bank_reference').type('BRI')
+    // cy.get('#nextBtn2').click()
 
-    cy.get('#submit').click()
+    // cy.get('#submit').click()
 
 
-    cy.wait(5000)
+    //cy.wait(5000)
     //tahap login dengan akun baru
     cy.get('input[name="email"]').type('habibudinn@gmail.com');
     cy.get('input[name="password"]').type('qwertyuiop');
@@ -30,7 +30,7 @@ describe('template spec', () => {
     cy.get('#remember').click();
     cy.get('#remember').should('be.checked');
     cy.get('.btn').click();
-
+// 
 
 
 // signupgagal 
